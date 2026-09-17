@@ -5,7 +5,7 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
-## [0.1.0] - 2026-09-17
+## [1.0.0] - 2026-09-17
 
 ### Added
 
@@ -16,3 +16,7 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 - `ConditionFilter` for passing existing Yii2 conditions as filters.
 - Unit tests and MySQL integration tests, including `yii\db\ActiveQuery` coverage.
 - English and Russian README files.
+
+
+[Unreleased]: https://github.com/mheads-dev/yii2-data-db/compare/1.0.0...HEAD
+[1.0.0]: https://github.com/mheads-dev/yii2-data-db/releases/tag/1.0.0
