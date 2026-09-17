@@ -1,0 +1,61 @@
+{
+    "name": "mheads/yii2-data-db",
+    "description": "Adapter for using Yii2 DB queries as yiisoft/data readers.",
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "keywords": [
+		"yii2",
+		"yiisoft-data",
+		"data-reader",
+		"query",
+		"adapter"
+    ],
+    "authors": [
+        {
+            "name": "MachineHeads",
+            "homepage": "https://machineheads.ru",
+            "role": "Development company"
+        },
+        {
+            "name": "Sergey Alekseenko",
+            "email": "sergei_alekseenk@list.ru",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "8.3 - 8.5",
+		"yiisoft/yii2": "^2.0.53",
+		"yiisoft/data": "^2.0"
+	},
+    "require-dev": {
+        "phpunit/phpunit": "^12.5",
+        "friendsofphp/php-cs-fixer": "^3.94",
+        "vimeo/psalm": "^6.16"
+    },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Mheads\\Yii2DataDb\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mheads\\Yii2DataDb\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "cs-fixer": "php-cs-fixer fix",
+        "psalm": "psalm --no-cache",
+        "test": "phpunit --testsuite Unit"
+    }
+}
